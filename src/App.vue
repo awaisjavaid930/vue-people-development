@@ -17,25 +17,35 @@
         <Menu />
       </v-container>
     </div>
-    <div class="backgroundImage">
-        <v-container>
-            <Service />
-        </v-container>
+    <div>
+      <v-spacer></v-spacer>
+      <v-app-bar
+        color="#6A76AB"
+        dark
+        shrink-on-scroll
+        prominent
+        src="https://picsum.photos/1920/1080?random"
+        fade-img-on-scroll
+        scroll-target="#scrolling-techniques-3"
+      >
+        <Service />
+      </v-app-bar>
     </div>
+    <ServiceProvider></ServiceProvider>
   </div>
 </template>
 
 <script>
 import Menu from "./views/Menu/Menu.vue";
-import Service from './views/Service/Service.vue';
+import Service from "./views/Service/Service.vue";
+import ServiceProvider from './views/ServiceProvider/ServiceProvider.vue';
 export default {
   name: "App",
   components: {
     Menu,
     Service,
+    ServiceProvider,
   },
-  data: () => ({
-    //
-  }),
+  data: () => ({}),
 };
 </script>
