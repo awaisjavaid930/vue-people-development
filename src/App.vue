@@ -31,12 +31,18 @@
         <Service />
       </v-app-bar>
     </div>
-    <ServiceProvider></ServiceProvider>
-  </div>
+    <v-container>
+      <ServiceProvider></ServiceProvider>
+    </v-container>
+    <v-container>
+      <Services></Services>
+    </v-container>
+    </div>
 </template>
 
 <script>
 import Menu from "./views/Menu/Menu.vue";
+import Services from './views/SerivceCategory/Services.vue';
 import Service from "./views/Service/Service.vue";
 import ServiceProvider from './views/ServiceProvider/ServiceProvider.vue';
 export default {
@@ -45,6 +51,7 @@ export default {
     Menu,
     Service,
     ServiceProvider,
+    Services,
   },
   data: () => ({}),
 };
