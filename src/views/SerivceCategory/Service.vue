@@ -13,7 +13,7 @@
         >
           {{ title }} <v-spacer></v-spacer> {{ contents[key] }}
            <v-img max-height="150" max-width="250" src="../../assets/logo.png" ></v-img> <!-- fine -->
-           <v-img max-height="150" max-width="250" src="@/assets/logo.png" ></v-img> <!-- fine -->
+           <!-- <v-img max-height="150" max-width="250" src="@/assets/logo.png" ></v-img> fine -->
         </v-card>
       </v-col>
     </v-row>
@@ -26,7 +26,7 @@
             return {
                 images : ['logo.png','pakistan.jph','pakistan.jph'],
                 titles : ['Pakistan','China','Turkey'],
-                contents : ['Lahore','Xiang','Istanbul'],
+                contents : ['Lahore','Xiang','Istanbul']
             }
         }
     }

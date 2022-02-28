@@ -1,5 +1,5 @@
 <template>
-  <v-card>
+  <v-card id="#home">
     <v-toolbar
       flat
       color="primary"

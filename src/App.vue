@@ -37,11 +37,16 @@
     <v-container>
       <Services></Services>
     </v-container>
+    <v-container>
+      <Click />
+    </v-container>  
     </div>
+    
 </template>
 
 <script>
 import Menu from "./views/Menu/Menu.vue";
+import Click from './views/Operations/Click.vue';
 import Services from './views/SerivceCategory/Services.vue';
 import Service from "./views/Service/Service.vue";
 import ServiceProvider from './views/ServiceProvider/ServiceProvider.vue';
@@ -52,6 +57,7 @@ export default {
     Service,
     ServiceProvider,
     Services,
+    Click,
   },
   data: () => ({}),
 };

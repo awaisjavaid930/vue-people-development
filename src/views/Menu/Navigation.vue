@@ -3,7 +3,8 @@
     <v-container class="grey lighten-5">
       <v-row class="mb-6" no-gutters>
         <v-col v-for="item in items" :key="item.value">
-            {{ item.value }} 
+            <!-- {{ item.value }}  -->
+            <a :href="'#'+item.value">{{ item.value }}</a>
         </v-col>
       </v-row>
     </v-container>
